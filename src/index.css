@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;500;600;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-image {
+    background-image: url(/img/hero.png);
+    height: 90vh;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+@media (min-width: 768px) {
+    .bg-image {
+        height: 100vh;
+        background-position: center center;
+    }
+}
+
+.bg-image::before {
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    z-index: -1;
+}
+
+.contenedor {
+    max-width: 150rem;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.abrir-menu-animacion {
+    animation-name: mostrarMenu;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    display: block;
+}
+
+@keyframes mostrarMenu {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.over {
+    z-index: 5;
+}
