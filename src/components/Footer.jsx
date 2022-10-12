@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faFacebookF, faTiktok } from "@fortawesome/free-brands-svg-icons"
 
@@ -13,9 +14,27 @@ const Footer = () => {
                 <h3 className='font-mulish font-medium text-2xl text-[#565656]'>Barbería</h3>
 
                 <div className='flex flex-col md:flex-row gap-8 font-mulish font-black tracking-wider text-[#565656] my-5 md:my-0'>
-                    <a>Precios</a>
-                    <a>Horarios</a>
-                    <a>Ubicación</a>
+                    <Link
+                        className="cursor-pointer"
+                        to="precios"
+                        smooth={true}
+                        duration={1000}
+                        offset={-150}
+                    >Precios</Link>
+                    <Link
+                        className="cursor-pointer"
+                        to="horarios"
+                        smooth={true}
+                        duration={1000}
+                        offset={-150}
+                    >Horarios</Link>
+                    <Link
+                        className="cursor-pointer"
+                        to="ubicacion"
+                        smooth={true}
+                        duration={1000}
+                        offset={-150}
+                    >Ubicación</Link>
                 </div>
                 <div className='flex gap-5'>
                     <a href="#">
