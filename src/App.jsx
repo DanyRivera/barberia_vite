@@ -4,6 +4,7 @@ import Precios from "./components/Precios"
 import Horarios from "./components/Horarios"
 import Ubicacion from "./components/Ubicacion"
 import Footer from "./components/Footer"
+import Gallery from "./components/Gallery"
 import Up from "./components/Up"
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Header />
       <Precios />
       <Horarios />
+      <Gallery />
       <Ubicacion/>
       <Footer />
       {mostrar && <Up />}
