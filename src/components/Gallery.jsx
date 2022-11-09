@@ -8,7 +8,7 @@ const Gallery = () => {
         className: "center",
         centerMode: true,
         infinite: true,
-        centerPadding: "10px",
+        centerPadding: "5px",
         slidesToShow: 3,
         speed: 500,
         adaptiveHeight: true
@@ -28,7 +28,7 @@ const Gallery = () => {
 
             <Slider  {...settings}>
                 {urlImagemes.map((url, index) => (
-                    <div key={index} className="my-10">
+                    <div key={index} className="my-10 outline-none">
                         <img src={url} alt="Imagen Slide" />
                     </div>
                 ))}
