@@ -58,7 +58,7 @@ const Header = () => {
         </div>
       </div>
 
-      {mostrar && <Barra setMostrar={setMostrar} />}
+      <Barra setMostrar={setMostrar} mostrar={mostrar} />
 
     </header>
   )

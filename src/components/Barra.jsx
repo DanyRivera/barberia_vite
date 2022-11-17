@@ -1,8 +1,8 @@
 import { Link } from "react-scroll"
 
-const Barra = ({ setMostrar }) => {
+const Barra = ({ setMostrar, mostrar }) => {
   return (
-    <aside className={`md:hidden bg-[#D9D9D9] fixed h-full top-0 right-0 w-[75%] p-5 abrir-menu-animacion`}>
+    <aside className={`${mostrar ? 'abrir-menu-animacion' : 'cerrar-menu-animacion'} md:hidden bg-[#D9D9D9] fixed h-full top-0 right-0 w-[75%] p-5`}>
       <div className="flex justify-between items-center mb-7">
         <h2 className="text-2xl font-mulish font-black">Menu</h2>
         <button
